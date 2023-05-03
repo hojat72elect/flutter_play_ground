@@ -15,7 +15,7 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-I am following [this tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ)(10 - 00:00).
+I am following [this tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ)(11 - 00:00).
 
 ### 1- normal text:
 
@@ -117,4 +117,45 @@ onPressed: () {},
 icon: const Icon(Icons.alternate_email),
 color: Colors.green,
 )
+```
+
+
+<strong>Flutter also provides layout:</strong>
+
+### 8- Center:
+
+puts everything in the center like this:
+
+```
+Center(
+  child: IconButton(
+    onPressed: () {},
+    icon: const Icon(Icons.alternate_email),
+    color: Colors.green,
+  ),
+)
+```
+
+### 9- Container:
+
+Always limits itself to the size of its children.
+(pay attention to `padding` and `margin` applied to this widget).
+```
+Container(
+  padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
+  margin: EdgeInsets.fromLTRB(30, 30, 30, 30),
+  color: Colors.grey[400],
+  child: const Text("Hello"),
+      )
+```
+
+### 10- Padding:
+
+Applies a padding to its only child.
+
+```
+Padding(
+  padding: EdgeInsets.all(90.0),
+  child: Text('Hello'),
+      )
 ```

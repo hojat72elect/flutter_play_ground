@@ -27,6 +27,10 @@ flutter:
 
   uses-material-design: true
 
+  assets:
+    - assets/
+
+
   fonts:
     - family: IndieFlower
       fonts:

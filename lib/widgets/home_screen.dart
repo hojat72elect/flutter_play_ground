@@ -12,8 +12,11 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.pink[300],
       ),
       body: Center(
-        child: Image.network(
-            'https://images.unsplash.com/photo-1682331592351-bcbcd13f3a45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'),
+        child: IconButton(
+          onPressed: () {},
+          icon: const Icon(Icons.alternate_email),
+          color: Colors.green,
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.pink[300],

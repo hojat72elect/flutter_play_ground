@@ -29,3 +29,42 @@
 
 // You can also do it this way:
 // Image.asset('assets/toronto_2.jpg')
+
+// this is an Icon() widget:
+
+// Icon(
+// Icons.airport_shuttle,
+// color: Colors.lightBlue,
+// size: 50.0,
+// )
+
+// And here we have ElevatedButton() widget
+// ElevatedButton(
+// onPressed: () {},
+// child: const Text("Click me plz!"),
+// )
+
+// and for a flat button use this:
+// TextButton(
+// onPressed: () {},
+// child: const Text("Click me plz!"),
+// )
+
+// This is how we add an icon to an elevated button:
+// ElevatedButton.icon(
+// onPressed: () {},
+// icon: const Icon(Icons.mail),
+// label: const Text("mail me"),
+// style: const ButtonStyle(
+// backgroundColor: MaterialStatePropertyAll(Colors.amber),
+// foregroundColor: MaterialStatePropertyAll(Colors.black),
+// ),
+// )
+
+// we can also have an IconButton() like this:
+
+// IconButton(
+// onPressed: () {},
+// icon: const Icon(Icons.alternate_email),
+// color: Colors.green,
+// )

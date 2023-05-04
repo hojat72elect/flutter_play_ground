@@ -10,10 +10,24 @@ class ChooseLocationScreen extends StatefulWidget {
 class _ChooseLocationScreenState extends State<ChooseLocationScreen> {
   int counter = 0;
 
+  void getData() async {
+    // simulate network request
+    String bio = await Future.delayed(Duration(seconds: 3), () {
+      return "programmer, gamer, lover of nature.";
+    });
+
+    String userName = await Future.delayed(Duration(seconds: 1), () {
+      return "Hojat Ghasemi";
+    });
+
+    print("$userName - $bio");
+  }
+
   @override
   void initState() {
     super.initState();
     print("init state function of 'Choose Location Screen' was called!");
+    getData();
   }
 
   @override

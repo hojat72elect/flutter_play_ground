@@ -4,7 +4,7 @@ import 'package:flutter_play_ground/widgets/loading_screen.dart';
 import 'package:flutter_play_ground/widgets/world_clock_screen.dart';
 
 void main() => runApp(MaterialApp(
-  initialRoute: '/home',
+  initialRoute: '/',
       routes: {
         '/': (context) => const LoadingScreen(),
         '/home': (context) => const WorldClockScreen(),

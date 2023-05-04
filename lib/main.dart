@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_play_ground/widgets/home_screen.dart';
+import 'package:flutter_play_ground/widgets/ninja_id_card.dart';
 
-void main() {
-  return runApp(const MaterialApp(
-    home: HomeScreen(),
-  ));
-}
+void main() => runApp(const MaterialApp(
+      home: NinjaCard(),
+    ));

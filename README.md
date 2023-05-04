@@ -159,3 +159,95 @@ Padding(
   child: Text('Hello'),
       )
 ```
+
+### 11- Row:
+
+aligns all the widgets in a row, one after another:
+
+```
+ Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          const Text('Hello World!'),
+          TextButton(
+              onPressed: () {},
+              style: ButtonStyle(
+                  foregroundColor: MaterialStateProperty.resolveWith(
+                      (states) => Colors.amber)),
+              child: const Text("Click me!")),
+          Container(
+            color: Colors.cyan,
+            padding: const EdgeInsets.all(30.0),
+            child: const Text('inside container'),
+          ),
+        ],
+      )
+```
+
+### 12- Column:
+
+aligns children in a column:
+
+```
+Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+          Container(
+            padding: const EdgeInsets.all(20.0),
+            color: Colors.cyan,
+            child: const Text("One"),
+          ),
+          Container(
+            padding: const EdgeInsets.all(30.0),
+            color: Colors.pinkAccent,
+            child: const Text("Two"),
+          ),
+          Container(
+            padding: const EdgeInsets.all(40.0),
+            color: Colors.amber,
+            child: const Text("three"),
+          ),
+        ],
+      ),
+```
+
+### 13- Expanded:
+
+Will take up all the available space left over in its parent.Example:
+
+```
+Row(
+        children: [
+          Expanded(
+            flex: 2,
+            child: Image.asset('assets/toronto_1.jpg'),
+          ),
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: const EdgeInsets.all(30.0),
+              color: Colors.cyan,
+              child: const Text('1'),
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: const EdgeInsets.all(30.0),
+              color: Colors.pinkAccent,
+              child: const Text('2'),
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: const EdgeInsets.all(30.0),
+              color: Colors.amber,
+              child: const Text('3'),
+            ),
+          ),
+        ],
+      )
+```

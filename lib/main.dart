@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_play_ground/widgets/ninja_id_card.dart';
+import 'package:flutter_play_ground/widgets/quote_list.dart';
+
 
 void main() => runApp(const MaterialApp(
-      home: NinjaCard(),
+      home: QuoteList(),
     ));

@@ -251,3 +251,6 @@ Row(
         ],
       )
 ```
+
+Widget life cycle:
+![doc_1.png](docs%2Fdoc_1.png)

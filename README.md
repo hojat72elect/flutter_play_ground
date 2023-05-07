@@ -254,3 +254,10 @@ Row(
 
 Widget life cycle:
 ![doc_1.png](docs%2Fdoc_1.png)
+
+
+________________________________________
+
+### TODO list app:
+
+The directory `lib/todo_app` contains a todo-list app that I have created by following [this tutorial](https://www.youtube.com/watch?v=K4P5DZ9TRns).(6:55)

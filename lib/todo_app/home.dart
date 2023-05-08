@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_play_ground/todo_app/constants/colors.dart';
+import 'package:flutter_play_ground/todo_app/widgets/search_box.dart';
+import 'package:flutter_play_ground/todo_app/widgets/todo_item.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -10,7 +12,36 @@ class Home extends StatelessWidget {
       backgroundColor: tdBGColor,
       appBar: _buildAppBar(),
       body: Container(
-        child: const Text('This is home screen.'),
+        padding: const EdgeInsets.symmetric(horizontal: 15),
+        child: Column(
+          children: [
+            searchBox(),
+            Expanded(
+              child: ListView(
+                children: [
+                  Container(
+                    margin: const EdgeInsets.only(
+                      top: 50,
+                      bottom: 20,
+                    ),
+                    child: const Text(
+                      "All Todos",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ),
+                  const TodoItem(),
+                  const TodoItem(),
+                  const TodoItem(),
+                  const TodoItem(),
+                  const TodoItem(),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -22,12 +53,12 @@ class Home extends StatelessWidget {
       title: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Icon(
+          const Icon(
             Icons.menu,
             color: tdBlack,
             size: 30,
           ),
-          Container(
+          SizedBox(
             height: 40,
             width: 40,
             child: ClipRRect(

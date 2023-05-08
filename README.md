@@ -260,4 +260,4 @@ ________________________________________
 
 ### TODO list app:
 
-The directory `lib/todo_app` contains a todo-list app that I have created by following [this tutorial](https://www.youtube.com/watch?v=K4P5DZ9TRns).(6:55)
+The directory `lib/todo_app` contains a todo-list app that I have created by following [this tutorial](https://www.youtube.com/watch?v=K4P5DZ9TRns).(18:01)
